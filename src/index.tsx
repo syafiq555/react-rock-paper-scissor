@@ -1,12 +1,14 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 import { Helmet } from 'react-helmet';
+import { ThemeProvider } from 'styled-components';
 
-import App from './components/App/App';
+import App from './components/App';
 import { GlobalStyled } from './index.module';
+import { themes } from './themes';
 
 render(
-  <>
+  <ThemeProvider theme={themes}>
     <Helmet>
       <style>
         @import
@@ -15,6 +17,6 @@ render(
     </Helmet>
     <GlobalStyled />
     <App />
-  </>,
+  </ThemeProvider>,
   document.querySelector('#root'),
 );
