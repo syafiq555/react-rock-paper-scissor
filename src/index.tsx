@@ -1,21 +1,18 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-import { createGlobalStyle } from 'styled-components';
-import App from './components/App/App';
+import { Helmet } from 'react-helmet';
 
-const GlobalStyled = createGlobalStyle`
-  *, *::after, *::before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  html, body, div#root {
-    min-height: 100vh;
-  }
-`;
+import App from './components/App/App';
+import { GlobalStyled } from './index.module';
 
 render(
   <>
+    <Helmet>
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+      </style>
+    </Helmet>
     <GlobalStyled />
     <App />
   </>,

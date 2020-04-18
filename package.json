@@ -7,19 +7,21 @@
   "author": "syafiq shamsuddin",
   "license": "MIT",
   "scripts": {
-    "start": "parcel public/index.html",
+    "start": "parcel ./public/index.html",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}' --fix --format verbose"
   },
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "@types/node": "^13.13.0",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
+    "@types/react-helmet": "^5.0.15",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "parcel-bundler": "^1.12.4",
