@@ -4,8 +4,8 @@ import { Helmet } from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 
 import App from './components/App';
-import { GlobalStyled } from './index.module';
-import { themes } from './themes';
+import { GlobalStyled } from './globalStyles';
+import { themes } from './themes/themes';
 
 render(
   <ThemeProvider theme={themes}>

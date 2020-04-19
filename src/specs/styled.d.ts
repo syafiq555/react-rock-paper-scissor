@@ -18,6 +18,7 @@ declare module 'styled-components' {
     darkText: string;
     scoreText: string;
     header: string;
+    light: string;
   }
 
   interface Size {

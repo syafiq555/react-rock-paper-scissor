@@ -6,7 +6,6 @@ const Container = styled.div`
   text-align: center;
   position: fixed;
   bottom: 3%;
-  width: 100%;
   a {
     color: hsl(228, 45%, 44%);
   }

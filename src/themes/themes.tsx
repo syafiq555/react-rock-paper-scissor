@@ -13,6 +13,7 @@ export const themes = {
     darkText: 'hsl(229, 25%, 31%)',
     scoreText: 'hsl(229, 64%, 46%)',
     header: 'hsl(217, 16%, 45%)',
+    light: '#fff',
   },
   size: {
     mobile: '375px',
